@@ -15,6 +15,6 @@ Bonjour is a home-like web app for use throughout your day. The goal is to displ
 # API
 We are using four API's for this project.
 1. [OpenWeather](https://openweather.org/) - for the weather
-2. [Zen Quotes](https://zenquotes.io/) - for the quotes
+2. [Quoteable](https://github.com/lukePeavey/quotable) - for the quotes
 3. [RapidAPI](https://rapidapi.com/Gramzivi/api/covid-19-data/) - for the Coronavirus disease statistics
-4. [NewsAPI](https://newsapi.org/) for the news feed
+4. [NewsAPI](https://newsapi.org/) - for the news feed
