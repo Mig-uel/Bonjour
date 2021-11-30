@@ -45,7 +45,7 @@ The four API's used for this project include:
 
 
 
-🔹<h5><em>How are we meeting the mandatory requirements with this project?</em></h5>
+🔹How are we meeting the mandatory requirements with this project?
 
-🔹<h5><em>What are additional features or extras we will consider adding on to this project?</em></h5>
+🔹What are additional features or extras we will consider adding on to this project?
 
