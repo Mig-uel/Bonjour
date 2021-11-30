@@ -2,8 +2,20 @@
   <img src="./assets/bonjour-cover.png" />
 </figure>
 
-# Bonjour
-Bonjour is a home-like web app for use throughout your day. The goal is to display the weather, quotes, news, and latest Coronavirus disease stats.
+# "Bonjour"
+Bonjour is a homepage-like web app for use throughout your day; especially when getting it started.
+
+🔸Features:
+  – Provide insight to major news stories local to user
+  – Display local weather, including chances of rainfall, and air quality
+  – A new "Quote of The Day" on page for a span of at least 365 days
+  – Update user on CoViD-19 rates; local and global
+
+🔸Goals:
+  – Lessen numbers of apps accessed for different updates
+  – Provide sufficient weather details, so to be checked only once
+  – Create an almost exclusive news stream based on current locality & prefeence
+  is to display the weather, quotes, news, and latest Coronavirus disease stats.
 
 # Mockups
 <h4>Mobile View</h4>
