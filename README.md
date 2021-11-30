@@ -42,3 +42,10 @@ The four API's used for this project include:
 2. [Quoteable](https://github.com/lukePeavey/quotable) - for the quotes
 3. [RapidAPI](https://rapidapi.com/Gramzivi/api/covid-19-data/) - for the Coronavirus disease statistics
 4. [NewsAPI](https://newsapi.org/) - for the news feed
+
+
+
+🔹<h5><em>How are we meeting the mandatory requirements with this project?</em></h5>
+
+🔹<h5><em>What are additional features or extras we will consider adding on to this project?</em></h5>
+
