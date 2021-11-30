@@ -3,7 +3,7 @@
 </figure>
 
 # "Bonjour"
-Bonjour is a homepage-like web app for use throughout your day; especially when getting it started.
+<em>Bonjour is a homepage-like web app for use throughout your day; especially when getting it started.</em>
 
 🔸Features:
 <ul>
@@ -11,6 +11,14 @@ Bonjour is a homepage-like web app for use throughout your day; especially when 
   <li>Display local weather, including chances of rainfall, and air quality</li>
   <li>A new "Quote of The Day" on page for a span of at least 365 days</li>
   <li>Update user on CoViD-19 rates; local and global</li>
+</ul>
+
+🔸Functions:
+<ul>
+  <li>Upon and with signup info, user weather data will depend on set location</li>
+  <li>With same info, only news stories relevant to location and interests will display</li>
+  <li>Each quote of the day will attempt to evoke calmness and readiness for the day ahead</li>
+  <li>Information on the current pandemic will be pulled from a trusted API source</li>
 </ul>
 
 🔸Goals:
@@ -21,15 +29,15 @@ Bonjour is a homepage-like web app for use throughout your day; especially when 
   <li>Sufficiently share Coronavirus statistics with changeable metrics</li>
 </ul>
 
-# Mockups
+# Wireframes & Mockups:
 <h4>Mobile View</h4>
-<p float="left">
+<p float="center">
   <img src="./assets/mockups/mobile/signed-out.png" />
   <img src="./assets/mockups/mobile/signed-in.png" />
 </p>
 
-# API
-We are using four API's for this project.
+# API Info:
+The four API's used for this project include:
 1. [OpenWeather](https://openweather.org/) - for the weather
 2. [Quoteable](https://github.com/lukePeavey/quotable) - for the quotes
 3. [RapidAPI](https://rapidapi.com/Gramzivi/api/covid-19-data/) - for the Coronavirus disease statistics
