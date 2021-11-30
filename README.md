@@ -6,16 +6,17 @@
 Bonjour is a homepage-like web app for use throughout your day; especially when getting it started.
 
 🔸Features:
+<li>
   – Provide insight to major news stories local to user
   – Display local weather, including chances of rainfall, and air quality
   – A new "Quote of The Day" on page for a span of at least 365 days
   – Update user on CoViD-19 rates; local and global
-
+</li>
 🔸Goals:
   – Lessen numbers of apps accessed for different updates
   – Provide sufficient weather details, so to be checked only once
-  – Create an almost exclusive news stream based on current locality & prefeence
-  is to display the weather, quotes, news, and latest Coronavirus disease stats.
+  – Create an almost exclusive news stream based on current locality & preference
+  – Sufficiently share Coronavirus statistics with changeable metrics
 
 # Mockups
 <h4>Mobile View</h4>
