@@ -58,5 +58,14 @@ The four API's used for this project include:
 - [Miguel](https://github.com/mig-uel)
 
 <!-- 🔹How are we meeting the mandatory requirements with this project?
-🔹What are additional features or extras we will consider adding on to this project? -->
+Our project meets the mandatory requirement since it includes:
+- A hi-fi wireframe representative of three views of our app. This includes a mobile, tablet and desktop view.
+- Has engaging images for the view of the app users
+- The dependencies that our app rely on are axios and parcel
+- The app has a specified purpose to inform app users of information on the weather and provide accurate information. The app will ideally contain data not only on air temperature, but also reports on other different meteorological conditions such as precipitation and wind speed.
 
+🔹What are additional features or extras we will consider adding on to this project? -->
+- Possibly add a quotes API which will provide app users with a motivational quote throughout the day that the app is being used or a coronavirus API which will provide updated information of covid case or statistics within your state. 
+- A feature may even be added to allow app users to share this information from the app with others
+- May add a timelapse section for which users can refer to future weather predictions whether that is telling users what weather they should expect in the next few hours or days.
+- Also may consider using three js for visuals and animations of our forecasts to make the app visuals more animated.
