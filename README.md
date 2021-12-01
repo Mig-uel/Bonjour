@@ -39,8 +39,8 @@
   <img src="./assets/mockups/mobile/news-page.png" />
 </p>
 
-### Desktop View
-![Desktop view](./assets/mockups/desktop/desktop-home.png)
+### Desktop/Tablet View
+![Desktop view](./assets/mockups/desktop-tablet/desktop-home.png)
 
 # API Info
 The four API's used for this project include:
