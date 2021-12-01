@@ -34,7 +34,7 @@
 <p float="center">
   <img src="./assets/mockups/mobile/signed-out.png" />
   <img src="./assets/mockups/mobile/signed-in.png" />
-  <img src="./assets/mockups/mobile/news.png" />
+  <img src="./assets/mockups/mobile/news-page.png" />
 </p>
 <p><center><img src="./assets/mockups/desktop/desktop-home.png" /></center></p>
 
