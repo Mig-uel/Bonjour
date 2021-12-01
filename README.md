@@ -36,7 +36,7 @@
   <img src="./assets/mockups/mobile/signed-in.png" />
   <img src="./assets/mockups/mobile/news-page.png" />
 </p>
-<p><center><img src="./assests/mockups/desktop/desktop-home.png" /></center></p>
+<p><center><img src="./assets/mockups/desktop/desktop-home.png" /></center></p>
 
 # API Info:
 The four API's used for this project include:
