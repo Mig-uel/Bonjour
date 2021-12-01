@@ -6,7 +6,7 @@
 - [Wireframes and Mockups](https://github.com/Mig-uel/Bonjour#wireframes--mockups)
 - [API Info](https://github.com/Mig-uel/Bonjour#api-info)
 - [Dependencies](https://github.com/Mig-uel/Bonjour#dependencies)
-- [Additional Information](https://github.com/Mig-uel/Bonjour#additional-information)
+- [Additional Information](https://github.com/Mig-uel/Bonjour#aditional-information)
 - [Contributors](https://github.com/Mig-uel/Bonjour#contributors)
 
 
