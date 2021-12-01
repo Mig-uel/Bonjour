@@ -34,12 +34,13 @@
 # Wireframes & Mockups
 ### Mobile View
 <p float="center">
-  <img src="./assets/mockups/mobile/signed-out.png" />
-  <img src="./assets/mockups/mobile/signed-in.png" />
-  <img src="./assets/mockups/mobile/news-page.png" />
+  <img src="./assets/mockups/mobile/mobile-signed-out.png" />
+  <img src="./assets/mockups/mobile/mobile-signed-in.png" />
+  <img src="./assets/mockups/mobile/mobile-news-page.png" />
 </p>
 
 ### Desktop/Tablet View
+![Desktop signed out view](./assets/mockups/desktop-tablet/desktop-signed-out.png)
 ![Desktop view](./assets/mockups/desktop-tablet/desktop-home.png)
 
 # API Info
