@@ -8,6 +8,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="main.js"></script>
   <title>Bonjour</title>
 </head>
 
@@ -20,9 +21,42 @@
     <div class="sign-up-login-buttons-container">
       <button type="button" class="btn btn-outline-light">Sign up</button>
       <div>
-        <a href="#">Login</a>
+        <a href="#" id="login-button">Login</a>
       </div>
     </div>
+
+    <div class="form-container hidden" id="signup-form">
+      <h1>Sign up</h1>
+      <div>
+        <form action="" class="form-group">
+          <div class="labels">
+            <label for="name">First Name</label>
+            <label for="name">Last Name</label>
+          </div>
+          <div class="names-container">
+            <input type="text" id="first-name" placeholder="Johny" required>
+            <input type="text" id="last-name" placeholder="Appleseed" required>
+          </div>
+          <div class="labels">
+            <label for="email">Email Address</label>
+            <label for="password">Password</label>
+          </div>
+
+          <div class="email-password-container">
+            <input type="email" id="email" placeholder="johnyappleseed@email.com" required>
+            <input type="password" id="password" placeholder="****************" required>
+          </div>
+
+          <div class="buttons-container">
+            <button type="submit" class="btn btn-outline-light">Sign up</button>
+            <button type="button" class="btn btn-danger" id="cancel-button">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
   </div>
 </body>
 
