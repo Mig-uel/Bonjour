@@ -6,11 +6,12 @@
 - [Wireframes and Mockups](https://github.com/Mig-uel/Bonjour#wireframes--mockups)
 - [API Info](https://github.com/Mig-uel/Bonjour#api-info)
 - [Dependencies](https://github.com/Mig-uel/Bonjour#dependencies)
+- [Additional Information](https://github.com/Mig-uel/Bonjour#additional-information)
 - [Contributors](https://github.com/Mig-uel/Bonjour#contributors)
 
 
 # Description
-<em>Bonjour is a homepage-like web app for use throughout your day; especially when getting it started.</em>
+*Bonjour is a homepage-like web app for use throughout your day; especially when getting it started.*
 
 🔸Features:
 - Provide insight to major news stories local to user
@@ -52,21 +53,21 @@ The four API's used for this project include:
 - Axios
 - Parcel
 
-# Contributors
-- [Jason](https://github.com/Khazinne)
-- [Khazinne](https://github.com/himslf)
-- [Miguel](https://github.com/mig-uel)
-
-# How are we meeting the mandatory requirements with this project?
-'Bonjour' meets the mandatory requirements by meeting the following:
-- Includes a hi-fi wireframe representing three views of our app. Including mobile, tablet and desktop view.
+# Aditional Information
+### How are we meeting the mandatory requirements with this project?
+*Bonjour* meets the mandatory requirements by meeting the following:
+- Includes a hi-fi wireframe representing three views of our app. Including mobile, tablet and desktop view
 - Has engaging images for user enjoyment/relaxation
 - Dependencies include axios and parcel
-- The app has a specified purpose to inform app users of information on the weather and provide accurate information, amongst other possibilities.
+- The app has a specified purpose to inform app users of information on the weather and provide accurate information, amongst other possibilities
 
-# What are additional features or extras we will consider adding on to this project?
-- Possibly add a quotes-API which will provide app users with a periodically updating motivational quote throughout the day.
-- A sharing-feature could even be added.
-- 
+### What are additional features or extras we will consider adding on to this project?
+- Possibly add a quotes-API which will provide app users with a periodically updating motivational quote throughout the day
+- A sharing-feature could even be added
 - May add a timelapse section for which users can refer to future weather predictions whether that is telling users what weather they should expect in the next few hours or days
 - Also may consider using three js for visuals and animations of our forecasts to make the app visuals more animated
+
+# Contributors
+- [Jason](https://github.com/himslf)
+- [Khazinne](https://github.com/Khazinne)
+- [Miguel](https://github.com/mig-uel)
