@@ -43,6 +43,9 @@
 ![Desktop signed out view](./assets/mockups/desktop-tablet/desktop-signed-out.png)
 ![Desktop view](./assets/mockups/desktop-tablet/desktop-home.png)
 
+### Figma Canvas
+[Figma](https://figma.fun/VKhRcx)
+
 # API Info
 The four API's used for this project include:
 1. [OpenWeather](https://openweather.org/) - for the weather
