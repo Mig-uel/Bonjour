@@ -46,6 +46,11 @@ a:hover {
 }
 .form-container {
   position: absolute;
+  
+  max-width: 800px;
+  min-width: 300px;
+
+  min-height: 500px;
 
   color: #fff;
   background-image: url("./assets/main-bg.png");
@@ -97,6 +102,30 @@ input::placeholder {
   justify-content: flex-end;
   gap: 5px;
 }
+.form-title {
+  outline: 2px solid #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.labels-responsive {
+  display: none;
+}
 .hidden {
   display: none;
+}
+@media (max-width: 1100px) {
+  .form-container {
+    flex-direction: row;
+  }
+  .labels {
+    display: none;
+  }
+  .labels-responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

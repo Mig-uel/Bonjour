@@ -16,3 +16,8 @@ let loginForm = document.querySelector('#login-form');
 loginButton.addEventListener('click', () => {
   loginForm.classList.toggle('hidden');
 });
+
+let cancelLoginButton = document.querySelector('#cancel-login-button');
+cancelLoginButton.addEventListener('click', () => {
+  loginForm.classList.toggle('hidden');
+});
