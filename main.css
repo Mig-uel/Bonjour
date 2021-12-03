@@ -90,6 +90,7 @@ body {
   }
   #quote {
     text-align: center;
+    line-height: 1.8rem;
   }
   /* .temperature-and-covid-container {
     flex-direction: column;
