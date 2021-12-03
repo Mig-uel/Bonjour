@@ -92,9 +92,9 @@ body {
     text-align: center;
   }
   .temperature-and-covid-container {
-    row-gap: 2rem;
+    gap: 40px;
   }
   .greeting-quote-container {
-   gap: 5rem;
+   gap: 30px;
   }
 }
