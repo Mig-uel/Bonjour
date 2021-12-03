@@ -15,8 +15,8 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
-.container {
-  outline: 2px solid #fff;
+.container-fluid {
+  /* outline: 2px solid #fff; */
 
   display: flex;
   flex-direction: column;
@@ -81,9 +81,12 @@ body {
 } */
 @media screen and (max-width: 1000px) {
   #quote-author {
-    align-self: flex-start;
+    align-self: center;
   }
   #greeting {
     font-size: 2.5rem;
+  }
+  #quote {
+    text-align: center;
   }
 }
