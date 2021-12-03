@@ -1,7 +1,7 @@
 {
   "name": "bonjour",
   "version": "1.0.0",
-  "main": "",
+  "main": "./js/main.js",
   "repository": "https://github.com/Mig-uel/Bonjour.git",
   "author": "N/A",
   "license": "MIT",
