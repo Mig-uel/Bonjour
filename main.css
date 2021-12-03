@@ -89,7 +89,4 @@ body {
   #quote {
     text-align: center;
   }
-  .temperature-and-covid-container {
-    gap: 5rem;
-  }
 }
