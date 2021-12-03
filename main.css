@@ -91,4 +91,10 @@ body {
   #quote {
     text-align: center;
   }
+  .temperature-and-covid-container {
+    row-gap: 2rem;
+  }
+  .greeting-quote-container {
+   gap: 5rem;
+  }
 }
