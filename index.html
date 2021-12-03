@@ -8,85 +8,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="main.js"></script>
   <title>Bonjour</title>
+  <!-- <script defer src="./js/main.js" type="module"></script> -->
 </head>
 
 <body>
-  <div class="container">
-    <div class="greeting-container">
-      <h1>Bonjour</h1>
-      <p>Get your daily dose of your local weather, news, and more!</p>
-    </div>
-    <div class="sign-up-login-buttons-container">
-      <button type="button" class="btn btn-outline-light">Sign up</button>
-      <div>
-        <a href="#" id="login-button">Login</a>
+  <div class="container-fluid">
+    <div class="greeting-quote-container">
+      <div id="greeting">Goodmorning, John!</div>
+      <div class="quote-container">
+        <div id="quote">"I will love the light for it shows me the way, yet I will endure the darkness because it
+          shows
+          me the stars."</div>
+        <div id="quote-author">- Og Mandino</div>
       </div>
     </div>
-
-    <div class="form-container hidden" id="signup-form">
-      <div>
-        <h1>Sign up</h1>
-        <form action="" class="form-group">
-          <!-- First/Last Name Labels -->
-          <div class="labels">
-            <label for="name">First Name</label>
-            <label for="name">Last Name</label>
-          </div>
-          <!-- First/Last Name Fields -->
-          <div class="names-container">
-            <label for="name" class="labels-responsive">First Name</label>
-            <input type="text" id="first-name" placeholder="Johny" required>
-            <label for="name" class="labels-responsive">Last Name</label>
-            <input type="text" id="last-name" placeholder="Appleseed" required>
-          </div>
-          <!-- Email/Password Labels -->
-          <div class="labels">
-            <label for="email">Email Address</label>
-            <label for="password">Password</label>
-          </div>
-          <!-- Email/Password Fields -->
-          <div class="email-password-container">
-            <label for="email" class="labels-responsive">Email Address</label>
-            <input type="email" id="email" placeholder="johnyappleseed@email.com" required>
-            <label for="password" class="labels-responsive">Password</label>
-            <input type="password" id="password" placeholder="****************" required>
-          </div>
-          <!-- Sign up/Login Buttons -->
-          <div class="buttons-container">
-            <button type="submit" class="btn btn-outline-light">Sign up</button>
-            <button type="button" class="btn btn-danger" id="cancel-button">Cancel</button>
-          </div>
-        </form>
+    <div class="temperature-and-covid-container">
+      <!-- TEMPERATURE WIDGET -->
+      <div id="temperature" class="widgets">
+        <div id="location"></div>
+        <div class="weather-and-temperature-container">
+          <div id="weather"></div>
+          <div id="temperature"></div>
+        </div>
+        <div class="hi-lo-container">
+          <div id="hi"></div>
+          <div id="lo"></div>
+        </div>
+        <div id="blur"></div>
       </div>
-    </div>
 
-    <div class="form-container hidden" id="login-form">
-      <div>
-        <h1>Login</h1>
-        <form action="" class="form-group">
-          <!-- Email/Password Labels -->
-          <div class="labels">
-            <label for="email">Email Address</label>
-            <label for="password">Password</label>
-          </div>
-          <!-- Email/Password Fields -->
-          <div class="email-password-container">
-            <label for="email" class="labels-responsive">Email Address</label>
-            <input type="email" id="email" placeholder="johnyappleseed@email.com" required>
-            <label for="password" class="labels-responsive">Password</label>
-            <input type="password" id="password" placeholder="****************" required>
-          </div>
-          <!-- Sign up/Login Buttons -->
-          <div class="buttons-container">
-            <button type="submit" class="btn btn-outline-light">Login</button>
-            <button type="button" class="btn btn-danger" id="cancel-login-button">Cancel</button>
-          </div>
-        </form>
+      <!-- COVID WIDGET -->
+      <div id="covid" class="widgets">
+        <div id=""></div>
+        <div class="">
+          <div id=""></div>
+          <div id=""></div>
+        </div>
+        <div class="">
+          <div id=""></div>
+          <div id=""></div>
+        </div>
+        <div id="blur"></div>
       </div>
     </div>
   </div>
+
+  <!-- <h1>API Test</h1>
+  <div id="weather-container">
+    <h3>Weather API</h3>
+    <input type="text" id="zip-code" placeholder="enter zip code">
+    <button id="zip-code-button">Submit</button>
+    <div id="weather-name"></div>
+    <div id="weather"></div>
+  </div>
+  <div id="quote-container">
+    <h3>Quotes API</h3>
+    <div id="quote"></div>
+    <div id="quote-author"></div>
+  </div> -->
 </body>
 
 </html>
