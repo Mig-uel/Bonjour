@@ -58,6 +58,8 @@ body {
   gap: 5rem;
 
   padding-top: 5rem;
+
+  max-width: 100%;
 }
 .widgets {
   background-color: rgba(255, 255, 255, 0.2);
