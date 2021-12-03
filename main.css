@@ -90,6 +90,6 @@ body {
     text-align: center;
   }
   .temperature-and-covid-container {
-    gap: 2rem;
+    gap: 5rem;
   }
 }
