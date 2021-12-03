@@ -91,7 +91,7 @@ body {
   #quote {
     text-align: center;
   }
-  .temperature-and-covid-container {
+  /* .temperature-and-covid-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -99,5 +99,8 @@ body {
   }
   .widgets {
     max-width: 100%;
+  } */
+  #temperature {
+    padding-bottom: 2rem;
   }
 }
