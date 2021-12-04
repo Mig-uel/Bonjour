@@ -1,7 +1,5 @@
 import axios from "axios";
 
-
-
 // WeatherAPI
 const weatherAPI = (zipCode) => {
   let url = axios.get(`${process.env.OW_BASE}${zipCode}&appid=${process.env.OW_API_KEY}`);
@@ -19,8 +17,5 @@ const quotesAPI = () => {
 
   return res;
 };
-
-
-
 
 export { weatherAPI, quotesAPI };
