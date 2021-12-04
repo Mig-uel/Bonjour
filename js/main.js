@@ -1,7 +1,7 @@
 import { weatherAPI, quotesAPI } from './api';
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 
-dotenv.config();
+// dotenv.config();
 
 // let zipCodeButton = document.getElementById("zip-code-button");
 
