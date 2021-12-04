@@ -25,8 +25,11 @@ import { weatherAPI, quotesAPI } from './api';
 
 quotesAPI()
   .then(res => {
-    console.log(res);
-    setQuote(res.content, res.author);
+    // console.log(res);
+    if (!res)
+      setQuote("No quote found!", "No author found!");
+    else
+      setQuote(res.content, res.author);
   })
   .catch(err => {
     console.log(err);
