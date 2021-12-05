@@ -84,6 +84,36 @@ body {
   filter: blur(5px);
   border-radius: 5px;
 } */
+#temperature-container {
+  /* outline: 2px solid #fff; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.weather-and-temperature-container {
+  /* outline: 2px solid #fff; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  font-size: 4rem;
+}
+.hi-lo-container {
+  /* outline: 2px solid #fff; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 @media screen and (max-width: 1000px) {
   #quote-author {
     align-self: center;
