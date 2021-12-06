@@ -20,6 +20,6 @@
     "last 1 Safari version"
   ],
   "engines": {
-    "node": "14.x"
+    "node": "17.x"
   }
 }

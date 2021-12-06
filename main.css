@@ -20,6 +20,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   padding-bottom: 5rem;
@@ -114,6 +115,75 @@ body {
   gap: 1rem;
 }
 
+.user-info-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 50em;
+  height: 30em;
+
+  max-width: 100%;
+  max-height: 100%;
+  
+  /* outline: 2px solid #fff; */
+}
+.user-info {
+  /* outline: 2px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.greeting-instructions-container {
+  /* outline: 2px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+#new-user-greeting {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+}
+#new-user-instructions {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.name-zip-container {
+  /* outline: 2px solid #fff; */
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: black;
+}
+.name-zip-container input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.save-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
 @media screen and (max-width: 1000px) {
   #quote-author {
     align-self: center;
@@ -125,6 +195,15 @@ body {
   #quote {
     text-align: center;
     line-height: 1.8rem;
+  }
+  .name-zip-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .name-zip-container input {
+    font-size: 1.5rem;
+    max-width: 50%;
   }
   /* .temperature-and-covid-container {
     flex-direction: column;

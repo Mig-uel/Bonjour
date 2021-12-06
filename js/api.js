@@ -1,16 +1,18 @@
 import axios from "axios";
 
-// WeatherAPI
-// const weatherAPI = (zipCode) => {
-//   let url = axios.get(`${process.env.OW_BASE}${zipCode}&appid=${process.env.OW_API_KEY}`);
+let getCookie = async () => {
+  let cookieArr = document.cookie.split(";");
 
-//   const res = url.then(response => { return response.data; }).catch(err => { console.error(err); });
+  for (let i = 0; i < cookieArr.length; i++) {
+    let cookiePair = cookieArr[i].split("=");
 
-//   return res;
-// };
+    if (cookiePair[0].trim() == 'zip')
+      return cookiePair[1];
+  }
+}
 
-const weatherAPI = () => {
-  let url = axios.get(`${process.env.OW_BASE}11218&appid=${process.env.OW_API_KEY}`);
+const weatherAPI = async (cookie) => {
+  let url = axios.get(`${process.env.OW_BASE}${cookie}&appid=${process.env.OW_API_KEY}`);
 
   const res = url.then(response => { return response.data; }).catch(err => { console.error(err); });
 
@@ -26,4 +28,4 @@ const quotesAPI = () => {
   return res;
 };
 
-export { weatherAPI, quotesAPI };
+export { weatherAPI, quotesAPI, getCookie };
