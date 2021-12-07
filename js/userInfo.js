@@ -56,6 +56,7 @@ export let getUserInfo = async () => {
   button.type = 'submit';
   button.innerText = 'Save';
   button.className = 'btn btn-outline-light';
+  button.setAttribute('onclick', 'document.location.reload(true)');
 
   buttonContainer.appendChild(button);
 
