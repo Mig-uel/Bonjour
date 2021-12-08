@@ -1,9 +1,6 @@
 import { weatherAPI, quotesAPI, getCookie } from './api';
 import { getUserInfo } from './userInfo';
 
-// import dotenv from 'dotenv';
-// dotenv.config();
-
 if (!(document.cookie))
   getUserInfo();
 else {
@@ -12,6 +9,29 @@ else {
   let user = cookie[1];
   document.getElementById("name-text").innerHTML = user;
 }
+
+function init() {
+  let date = new Date();
+  let hour = date.getHours();
+  let greeting = document.getElementById("greeting-text");
+
+  if (hour < 12) {
+    greeting.innerHTML = 'Good Morning';
+
+    document.body.style.backgroundImage = "url('./assets/backgrounds/morning-bg.png')";
+  }
+  else if (hour < 18) {
+    greeting.innerHTML = 'Good Afternoon';
+
+    document.body.style.backgroundImage = "url('./assets/backgrounds/afternoon-bg.jpg')";
+  }
+  else {
+    greeting.innerHTML = 'Good Evening';
+
+    document.body.style.backgroundImage = "url('./assets/backgrounds/evening-bg.jpg')";
+  }
+}
+init();
 
 getCookie()
   .then(cookie => {

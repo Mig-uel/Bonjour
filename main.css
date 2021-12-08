@@ -9,7 +9,7 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-image: url(./assets/raw-images/bg.jpg);
+  background-image: url('./assets/backgrounds/default-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
