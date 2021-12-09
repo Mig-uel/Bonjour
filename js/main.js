@@ -18,17 +18,17 @@ function init() {
   if (hour < 12) {
     greeting.innerHTML = 'Good Morning';
 
-    // document.body.style.backgroundImage = "url('./assets/backgrounds/morning-bg.png')";
+    document.body.style.backgroundImage = "url('https://github.com/Mig-uel/Bonjour/blob/main/assets/backgrounds/morning-bg.png?raw=true')";
   }
   else if (hour < 18) {
     greeting.innerHTML = 'Good Afternoon';
 
-    // document.body.style.backgroundImage = "url('./assets/backgrounds/afternoon-bg.jpg')";
+    document.body.style.backgroundImage = "url('https://github.com/Mig-uel/Bonjour/blob/main/assets/backgrounds/afternoon-bg.jpg?raw=true')";
   }
   else {
     greeting.innerHTML = 'Good Evening';
 
-    // document.body.style.backgroundImage = "url('./assets/backgrounds/evening-bg.jpg')";
+    document.body.style.backgroundImage = "url('https://github.com/Mig-uel/Bonjour/blob/main/assets/backgrounds/evening-bg.jpg?raw=true')";
   }
 }
 init();

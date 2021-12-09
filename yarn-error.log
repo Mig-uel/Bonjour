@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/miguel/.nvm/versions/node/v17.1.0/bin/node /opt/homebrew/bin/yarn add parcek
+  /Users/miguel/.nvm/versions/node/v17.1.0/bin/node /opt/homebrew/bin/yarn build
 
 PATH: 
   /Users/miguel/.nvm/versions/node/v17.1.0/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/.dotnet/tools:/Library/Apple/usr/bin:/Users/miguel/.nvm/versions/node/v17.1.0/bin:/opt/homebrew/bin
@@ -14,32 +14,28 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/parcek: Not found
-      at Request.params.callback [as _callback] (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:67029:18)
-      at Request.self.callback (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:140883:22)
-      at Request.emit (node:events:390:28)
-      at Request.<anonymous> (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:141855:10)
-      at Request.emit (node:events:390:28)
-      at IncomingMessage.<anonymous> (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:141777:12)
-      at Object.onceWrapper (node:events:509:28)
-      at IncomingMessage.emit (node:events:402:35)
-      at endReadableNT (node:internal/streams/readable:1340:12)
-      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+  SyntaxError: /Users/miguel/Desktop/bonjour/package.json: Unexpected token } in JSON at position 236
+      at JSON.parse (<anonymous>)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:321:13
 
 npm manifest: 
   {
     "name": "bonjour",
     "version": "1.0.0",
-    "main": "./js/main.js",
+    "main": "index.html",
     "repository": "https://github.com/Mig-uel/Bonjour.git",
     "author": "N/A",
     "license": "MIT",
     "dependencies": {
       "axios": "^0.24.0",
-      "parcel": "^2.0.1"
+      "parcel": "^2.0.1",
     },
     "scripts": {
-      "start": "parcel index.html"
+      "start": "parcel index.html",
+      "build": "build parcel index.html"
     },
     "devDependencies": {
       "dotenv": "^10.0.0"
