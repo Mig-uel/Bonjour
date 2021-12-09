@@ -110,5 +110,4 @@ let setNews = (totalResults, news) => {
 
     headlinesContainer.appendChild(headline);
   }
-
 };
