@@ -16,7 +16,7 @@ export let getUserInfo = async () => {
 
   let instructions = document.createElement('div');
   instructions.id = 'new-user-instructions';
-  instructions.innerHTML = 'Welcome to Bonjour! </br> Please enter your name and zip code for a more personalized experience.';
+  instructions.innerHTML = 'Enter your name and zip code for a personalized experience.';
 
   greetingInstructionsContainer.appendChild(greeting);
   greetingInstructionsContainer.appendChild(instructions);
@@ -55,7 +55,7 @@ export let getUserInfo = async () => {
   button.id = "save-button";
   button.type = 'submit';
   button.innerText = 'Save';
-  button.className = 'btn btn-outline-light';
+  button.className = 'btn btn-outline-dark';
   button.setAttribute('onclick', 'document.location.reload(true)');
 
   buttonContainer.appendChild(button);

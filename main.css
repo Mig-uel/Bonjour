@@ -121,14 +121,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   width: 50em;
   height: 30em;
 
   max-width: 100%;
   max-height: 100%;
-  
+
+  border-radius: 5px;
   /* outline: 2px solid #fff; */
 }
 .user-info {
@@ -153,11 +153,11 @@ body {
 #new-user-greeting {
   font-size: 3rem;
   font-weight: 900;
-  color: #fff;
+  color: black;
 }
 #new-user-instructions {
   font-size: 1.5rem;
-  color: #fff;
+  color: black;
 }
 .name-zip-container {
   /* outline: 2px solid #fff; */
@@ -171,9 +171,9 @@ body {
 }
 .name-zip-container input {
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
   background-color: transparent;
-  color: #fff;
+  color: black;
   font-size: 1.5rem;
 }
 .save-button-container {

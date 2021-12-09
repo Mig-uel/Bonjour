@@ -28,4 +28,13 @@ const quotesAPI = () => {
   return res;
 };
 
-export { weatherAPI, quotesAPI, getCookie };
+//NewsAPI
+const newsAPI = () => {
+  let url = axios.get(process.env.NEWS_BASE + process.env.NEWS_KEY);
+
+  const res = url.then(response => { return response.data }).catch(err => { console.error(err); });
+
+  return res;
+}
+
+export { weatherAPI, quotesAPI, getCookie, newsAPI };

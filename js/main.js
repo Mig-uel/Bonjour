@@ -1,4 +1,4 @@
-import { weatherAPI, quotesAPI, getCookie } from './api';
+import { weatherAPI, quotesAPI, getCookie, newsAPI } from './api';
 import { getUserInfo } from './userInfo';
 
 if (!(document.cookie))
@@ -79,3 +79,7 @@ let setQuote = (quote, author) => {
   document.getElementById("quote-text").innerHTML = quote;
   document.getElementById("quote-author-text").innerHTML = author;
 };
+
+newsAPI()
+  .then(res => console.log(res.articles))
+  .catch(err => console.log(err));
