@@ -73,18 +73,6 @@ body {
   height: 20em;
   /* padding: 5rem; */
 }
-/* #blur {
-  background-image: url(./assets/raw-images/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-
-  height: 100%;
-  width: 100%;
-  filter: blur(5px);
-  border-radius: 5px;
-} */
 #temperature-container {
   /* outline: 2px solid #fff; */
 
@@ -182,6 +170,32 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding-top: 1rem;
+}
+#news {
+  /* outline: 1px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+#content-title {
+  align-self: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#headlines-container
+{
+  /* outline: 1px solid #fff; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex=start;
+  gap: .7rem;
+}
+.headline, .headline a
+{
+  /* outline: 1px solid #fff; */
+  color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) {

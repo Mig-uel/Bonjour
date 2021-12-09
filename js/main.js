@@ -81,5 +81,34 @@ let setQuote = (quote, author) => {
 };
 
 newsAPI()
-  .then(res => console.log(res.articles))
+  .then(res => {
+    // console.log(res)
+
+    let newsArray = res.articles;
+    let fixedArray = [];
+
+    for (let i = 0; i < 4; i++) {
+      fixedArray.push(newsArray[i]);
+    }
+
+    // console.log(fixedArray[0].title);
+    setNews(res.totalResults, fixedArray);
+  })
   .catch(err => console.log(err));
+
+let setNews = (totalResults, news) => {
+  let headlinesContainer = document.getElementById("headlines-container");
+  // let headlines = document.createElement("div");
+  // headlines.className = "headlines";
+
+  for (let i = 0; i < news.length; i++) {
+    let headline = document.createElement("div");
+    headline.className = "headline";
+    headline.id = `headline-${i}`;
+
+    headline.innerHTML = `<a href="${news[i].url}" target="_blank">${news[i].title}</a>`;
+
+    headlinesContainer.appendChild(headline);
+  }
+
+};
