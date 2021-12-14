@@ -36,8 +36,9 @@ body {
 }
 #greeting {
   font-size: 3.5rem;
+  font-family: 'Brush Script MT', cursive;
   font-weight: 900;
-  color: #fff;
+  color: rgb(224, 196, 117);
 }
 .quote-container {
   /* outline: 2px solid #fff; */
@@ -47,10 +48,13 @@ body {
 }
 #quote {
   font-style: italic;
+  font-family: 'Palatino';
+  
 }
 
 #quote-author {
   align-self: flex-end;
+  font-family: 'Brush Script MT', cursive;
 }
 .temperature-and-covid-container {
   /* outline: 2px solid #fff; */
@@ -179,6 +183,7 @@ body {
 }
 #content-title {
   align-self: center;
+  font-family: 'Tahoma';
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -190,11 +195,13 @@ body {
   flex-direction: column;
   align-items: flex=start;
   gap: .7rem;
+  font-family: 'Tahoma';
 }
 .headline, .headline a
 {
   /* outline: 1px solid #fff; */
   color: #fff;
+  font-family: 'Tahoma';
   text-decoration: none;
 }
 
