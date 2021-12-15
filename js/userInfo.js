@@ -87,10 +87,14 @@ export let getUserInfo = async () => {
 
     let name = document.querySelector('#name').value;
     let zip = document.querySelector('#zip-code').value;
+    let lang = document.querySelector('#language').value;
+    let country = document.querySelector('#country').value;
 
     let user = {
       name: name,
-      zip: zip
+      zip: zip,
+      lang: lang,
+      country: country
     };
 
     cookies(user);

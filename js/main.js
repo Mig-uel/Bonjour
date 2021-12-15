@@ -2,7 +2,6 @@ import { weatherAPI, quotesAPI, getCookie, newsAPI } from './api';
 import { getUserInfo } from './userInfo';
 
 if (!(document.cookie)) {
-  // document.getElementById('name-text') = '';
   getUserInfo();
 }
 else {
