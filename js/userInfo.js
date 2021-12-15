@@ -1,4 +1,5 @@
 import { cookies } from './cookies'
+import { selection } from './langCountry'
 
 export let getUserInfo = async () => {
   let div = document.createElement('div');
@@ -24,7 +25,8 @@ export let getUserInfo = async () => {
   let form = document.createElement('form');
   form.className = 'user-info-form';
   form.id = 'user-info-form';
-  form.setAttribute('onsubmit', 'return false');
+  // form.setAttribute('onsubmit', 'return false');
+  form.autocomplete = false;
 
   let nameZipContainer = document.createElement('div');
   nameZipContainer.className = 'name-zip-container';
@@ -48,6 +50,12 @@ export let getUserInfo = async () => {
   nameZipContainer.appendChild(nameInput);
   nameZipContainer.appendChild(zipInput);
 
+  // Language and Country Select
+  let langCountryLabel = document.createElement('div');
+  langCountryLabel.id = 'language-country-label';
+  langCountryLabel.innerHTML = 'Choose a Language and Country for the News'
+  // End of Language and Country Select
+
   let buttonContainer = document.createElement('div');
   buttonContainer.className = 'save-button-container';
 
@@ -61,6 +69,8 @@ export let getUserInfo = async () => {
   buttonContainer.appendChild(button);
 
   form.appendChild(nameZipContainer);
+  form.appendChild(langCountryLabel);
+  form.appendChild(selection());
   form.appendChild(buttonContainer);
 
   userInfo.appendChild(greetingInstructionsContainer);
