@@ -66,12 +66,17 @@ let setQuote = (quote, author) => {
 // Calls the news API
 newsAPI()
   .then(res => {
-    // console.log(res)
+    console.log(res.articles)
     let newsArray = res.articles;
     let fixedArray = [];
 
-    for (let i = 0; i < 4; i++) {
-      fixedArray.push(newsArray[i]);
+    if (res.articles.length === 0) {
+      setNews(res.totalResults, fixedArray);
+    }
+    else {
+      for (let i = 0; i < 4; i++) {
+        fixedArray.push(newsArray[i]);
+      }
     }
 
     // console.log(fixedArray[0].title);
@@ -83,7 +88,7 @@ newsAPI()
 let setNews = (totalResults, news) => {
   let headlinesContainer = document.getElementById("headlines-container");
 
-  if (totalResults === 0) {
+  if (totalResults === null) {
     headlinesContainer.innerHTML = `<h3>No news found!</h3>`;
   }
   else {
