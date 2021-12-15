@@ -1,13 +1,15 @@
 import { weatherAPI, quotesAPI, getCookie, newsAPI } from './api';
 import { getUserInfo } from './userInfo';
 
-if (!(document.cookie))
+if (!(document.cookie)) {
+  // document.getElementById('name-text') = '';
   getUserInfo();
+}
 else {
   let cookieArray = document.cookie.split(';');
   let cookie = cookieArray[0].split('=');
   let user = cookie[1];
-  document.getElementById("name-text").innerHTML = user;
+  document.getElementById("name-text").innerHTML = ', ' + user + '!';
 }
 
 function init() {
@@ -58,8 +60,8 @@ getCookie()
       hi = Math.round((hi * 9) / 5 - 459.67).toFixed(0);
       lo = Math.round((lo * 9) / 5 - 459.67).toFixed(0);
 
-      document.getElementById("hi").innerHTML = `High: ${hi}°F`;
-      document.getElementById("lo").innerHTML = `Low: ${lo}°F`;
+      document.getElementById("hi").innerHTML = `Hi: ${hi}°F`;
+      document.getElementById("lo").innerHTML = `Lo: ${lo}°F`;
     };
   })
 
