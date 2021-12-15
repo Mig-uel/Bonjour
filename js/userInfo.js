@@ -1,6 +1,7 @@
-import { cookies } from './cookies'
+import { setUserData } from './userData'
 import { selection } from './langCountry'
 
+// Creates a modal window for new users to enter their information.
 export let getUserInfo = async () => {
   let div = document.createElement('div');
   div.className = 'user-info-container';
@@ -61,7 +62,7 @@ export let getUserInfo = async () => {
 
   let button = document.createElement('button');
   button.id = "save-button";
-  button.type = 'submit';
+  button.type = 'button';
   button.innerText = 'Save';
   button.className = 'btn btn-outline-dark';
   button.setAttribute('onclick', 'document.location.reload(true)');
@@ -97,7 +98,8 @@ export let getUserInfo = async () => {
       country: country
     };
 
-    cookies(user);
+    // Passes the user object to the setUserData function.
+    setUserData(user);
     div.remove();
   });
 };

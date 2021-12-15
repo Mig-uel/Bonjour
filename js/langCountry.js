@@ -1,3 +1,4 @@
+// Arrow function to create language and country selections
 let selection = () => {
   // Language Object
   let languageObj = {
@@ -68,6 +69,7 @@ let selection = () => {
   languageSelection.id = 'language';
   languageSelection.className = 'form-select';
 
+  // Language Selection Options
   let languageOptionNode = document.createElement('option');
   languageOptionNode.innerHTML = 'Language';
   languageOptionNode.selected = true;
@@ -75,10 +77,12 @@ let selection = () => {
 
   languageSelection.appendChild(languageOptionNode);
 
+  // Get size, keys, and values of languageObj
   let langSize = Object.keys(languageObj).length;
   let langKeys = Object.keys(languageObj);
   let langValues = Object.values(languageObj);
 
+  // Create language options
   for (let i = 0; i < langSize; i++) {
     let newOptionNode = document.createElement('option');
     newOptionNode.value = langKeys[i];
@@ -92,6 +96,7 @@ let selection = () => {
   countrySelection.id = 'country';
   countrySelection.className = 'form-select';
 
+  // Country Selection Options
   let countryOptionNode = document.createElement('option');
   countryOptionNode.innerHTML = 'Country';
   countryOptionNode.selected = true;
@@ -99,10 +104,12 @@ let selection = () => {
 
   countrySelection.appendChild(countryOptionNode);
 
+  // Get size, keys, and values of countryObj
   let countSize = Object.keys(countryObj).length;
   let countKeys = Object.keys(countryObj);
   let countValues = Object.values(countryObj);
 
+  // Create country options
   for (let i = 0; i < countSize; i++) {
     let newOptionNode = document.createElement('option');
     newOptionNode.value = countKeys[i];
@@ -111,9 +118,11 @@ let selection = () => {
     countrySelection.appendChild(newOptionNode);
   }
 
+  // Append language and country selections to languageCountryContainer
   languageCountryContainer.appendChild(languageSelection);
   languageCountryContainer.appendChild(countrySelection);
 
+  // Return languageCountryContainer
   return languageCountryContainer;
 };
 

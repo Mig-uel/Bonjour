@@ -1,69 +1,50 @@
-import { weatherAPI, quotesAPI, getCookie, newsAPI } from './api';
+// Imports various functions
+import { weatherAPI, quotesAPI, newsAPI } from './api';
 import { getUserInfo } from './userInfo';
+import { init as backgroundChanger } from './background';
 
-if (!(document.cookie)) {
+// Check if use has already set a name, if not, create prompt, else set the name already stored.
+if (localStorage.getItem('name') === null) {
   getUserInfo();
 }
 else {
-  let cookieArray = document.cookie.split(';');
-  let cookie = cookieArray[0].split('=');
-  let user = cookie[1];
-  document.getElementById("name-text").innerHTML = ', ' + user + '!';
+  document.getElementById("name-text").innerHTML = ', ' + localStorage.getItem('name') + '!';
 }
 
-function init() {
-  let date = new Date();
-  let hour = date.getHours();
-  let greeting = document.getElementById("greeting-text");
+// Changes background based on time of day
+backgroundChanger();
 
-  if (hour < 12) {
-    greeting.innerHTML = 'Good Morning';
-
-    document.body.style.backgroundImage = "url('https://github.com/Mig-uel/Bonjour/blob/main/assets/backgrounds/morning-bg.png?raw=true')";
-  }
-  else if (hour < 18) {
-    greeting.innerHTML = 'Good Afternoon';
-
-    document.body.style.backgroundImage = "url('https://github.com/Mig-uel/Bonjour/blob/main/assets/backgrounds/afternoon-bg.jpg?raw=true')";
-  }
-  else {
-    greeting.innerHTML = 'Good Evening';
-
-    document.body.style.backgroundImage = "url('https://github.com/Mig-uel/Bonjour/blob/main/assets/backgrounds/evening-bg.jpg?raw=true')";
-  }
-}
-init();
-
-getCookie()
-  .then(cookie => {
-    weatherAPI(cookie)
-      .then(res => {
-        // console.log(res);
-        setWeather(res.name, res.weather[0].icon, res.main.temp, res.main.temp_max, res.main.temp_min);
-      })
-      .catch(err => {
-        console.log(err);
-      });
-
-
-    let setWeather = (name, weatherIcon, temp, hi, lo) => {
-      document.getElementById("location").innerHTML = name;
-      document.getElementById("weather-icon").src = weatherIcon;
-      let src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
-      document.getElementById("weather-icon").setAttribute("src", src);
-
-      temp = Math.round((temp * 9) / 5 - 459.67).toFixed(0);
-
-      document.getElementById("temperature").innerHTML = `${temp}°F`;
-
-      hi = Math.round((hi * 9) / 5 - 459.67).toFixed(0);
-      lo = Math.round((lo * 9) / 5 - 459.67).toFixed(0);
-
-      document.getElementById("hi").innerHTML = `Hi: ${hi}°F`;
-      document.getElementById("lo").innerHTML = `Lo: ${lo}°F`;
-    };
+// Calls the weather API
+weatherAPI()
+  .then(res => {
+    setWeather(res.name, res.weather[0].icon, res.main.temp, res.main.temp_max, res.main.temp_min);
   })
+  .catch(err => {
+    console.log(err);
+  });
 
+// Sets the weather
+let setWeather = (name, weatherIcon, temp, hi, lo) => {
+  document.getElementById("location").innerHTML = name;
+  document.getElementById("weather-icon").src = weatherIcon;
+  let src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
+  document.getElementById("weather-icon").setAttribute("src", src);
+
+  // Convert the main temperature to fahrenheit
+  temp = Math.round((temp * 9) / 5 - 459.67).toFixed(0);
+
+  document.getElementById("temperature").innerHTML = `${temp}°F`;
+
+  // Rounds the high and low temps and converts to fahrenheit
+  hi = Math.round((hi * 9) / 5 - 459.67).toFixed(0);
+  lo = Math.round((lo * 9) / 5 - 459.67).toFixed(0);
+
+  // Sets the high and low temps
+  document.getElementById("hi").innerHTML = `Hi: ${hi}°F`;
+  document.getElementById("lo").innerHTML = `Lo: ${lo}°F`;
+};
+
+// Calls the quotes API
 quotesAPI()
   .then(res => {
     // console.log(res);
@@ -76,15 +57,16 @@ quotesAPI()
     console.log(err);
   });
 
+// Sets the quote
 let setQuote = (quote, author) => {
   document.getElementById("quote-text").innerHTML = quote;
   document.getElementById("quote-author-text").innerHTML = author;
 };
 
+// Calls the news API
 newsAPI()
   .then(res => {
     // console.log(res)
-
     let newsArray = res.articles;
     let fixedArray = [];
 
@@ -97,18 +79,22 @@ newsAPI()
   })
   .catch(err => console.log(err));
 
+// Sets the news
 let setNews = (totalResults, news) => {
   let headlinesContainer = document.getElementById("headlines-container");
-  // let headlines = document.createElement("div");
-  // headlines.className = "headlines";
 
-  for (let i = 0; i < news.length; i++) {
-    let headline = document.createElement("div");
-    headline.className = "headline";
-    headline.id = `headline-${i}`;
+  if (totalResults === 0) {
+    headlinesContainer.innerHTML = `<h3>No news found!</h3>`;
+  }
+  else {
+    for (let i = 0; i < news.length; i++) {
+      let headline = document.createElement("div");
+      headline.className = "headline";
+      headline.id = `headline-${i}`;
 
-    headline.innerHTML = `<a href="${news[i].url}" target="_blank">${news[i].title}</a>`;
+      headline.innerHTML = `<a href="${news[i].url}" target="_blank">${news[i].title}</a>`;
 
-    headlinesContainer.appendChild(headline);
+      headlinesContainer.appendChild(headline);
+    }
   }
 };
