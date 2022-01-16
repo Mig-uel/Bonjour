@@ -1,77 +1,70 @@
-![Bonjour banner](./assets/bonjour-cover.png)
+# Getting Started with Create React App
 
-# "Bonjour"
-### Table of Contents
-- [Description](https://github.com/Mig-uel/Bonjour#description)
-- [Wireframes and Mockups](https://github.com/Mig-uel/Bonjour#wireframes--mockups)
-- [API Info](https://github.com/Mig-uel/Bonjour#api-info)
-- [Dependencies](https://github.com/Mig-uel/Bonjour#dependencies)
-- [Additional Information](https://github.com/Mig-uel/Bonjour#aditional-information)
-- [Contributors](https://github.com/Mig-uel/Bonjour#contributors)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-# Description
-*Bonjour is a homepage-like web app for use throughout your day; especially when getting it started.*
+In the project directory, you can run:
 
-🔸Features:
-- Provide insight to major news stories local to user
-- Display local weather, including chances of rainfall, and air quality
-- A new "Quote of The Day" on page for a span of at least 365 days
-- Update user on CoViD-19 rates; local and global
+### `yarn start`
 
-🔸Functions:
-- Upon and with signup info, user weather data will depend on set location
-- With same info, only news stories relevant to location and interests will display
-- Each quote of the day will attempt to evoke calmness and readiness for the day ahead
-- Information on the current pandemic will be pulled from a trusted API source
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-🔸Goals:
-- Lessen numbers of apps accessed for different updates
-- Provide sufficient weather details, so to be checked only once
-- Create an almost exclusive news stream based on current locality & preference
-- Sufficiently share Coronavirus statistics with changeable metrics
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-# Wireframes & Mockups
-### Mobile View
-<p float="center">
-  <img src="./assets/mockups/mobile/mobile-signed-out.png" />
-  <img src="./assets/mockups/mobile/mobile-signed-in.png" />
-  <img src="./assets/mockups/mobile/mobile-news-page.png" />
-</p>
+### `yarn test`
 
-### Desktop/Tablet View
-![Desktop signed out view](./assets/mockups/desktop-tablet/desktop-signed-out.png)
-![Desktop view](./assets/mockups/desktop-tablet/desktop-home.png)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Figma Canvas
-[Figma](https://figma.fun/VKhRcx)
+### `yarn build`
 
-# API Info
-The four API's used for this project include:
-1. [OpenWeather](https://openweather.org/) - for the weather
-2. [Quoteable](https://github.com/lukePeavey/quotable) - for the quotes
-3. [RapidAPI](https://rapidapi.com/Gramzivi/api/covid-19-data/) - for the Coronavirus disease statistics
-4. [NewsAPI](https://newsapi.org/) - for the news feed
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# Dependencies
-- Axios
-- Parcel
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-# Aditional Information
-### How are we meeting the mandatory requirements with this project?
-*Bonjour* meets the mandatory requirements by meeting the following:
-- Includes a hi-fi wireframe representing three views of our app. Including mobile, tablet and desktop view
-- Has engaging images for user enjoyment/relaxation
-- Dependencies include axios and parcel
-- The app has a specified purpose to inform app users of information on the weather and provide accurate information, amongst other possibilities
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### What are additional features or extras we will consider adding on to this project?
-- Possibly add a quotes-API which will provide app users with a periodically updating motivational quote throughout the day
-- A sharing-feature could even be added
-- May add a timelapse section for which users can refer to future weather predictions whether that is telling users what weather they should expect in the next few hours or days
-- Also may consider using three js for visuals and animations of our forecasts to make the app visuals more animated
+### `yarn eject`
 
-# Contributors
-- [Jason](https://github.com/himslf)
-- [Khazinne](https://github.com/Khazinne)
-- [Miguel](https://github.com/mig-uel)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
